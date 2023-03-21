@@ -7,8 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class QcalcApplication {
 
 	public static void main(String[] args) {
-		System.out.println("Hello world!");
 		SpringApplication.run(QcalcApplication.class, args);
+		StandardCalculator cal=new StandardCalculator();
+		cal.add(1,5);
+		System.out.println(cal.getResult());
 	}
 
 }
