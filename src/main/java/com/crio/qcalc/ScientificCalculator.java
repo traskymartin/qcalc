@@ -1,7 +1,7 @@
 package com.crio.qcalc;
 
 import javax.xml.transform.Result;
-import java.utill.*;
+import java.util.*;
 
 public class ScientificCalculator extends StandardCalculator{
 
@@ -30,7 +30,7 @@ public class ScientificCalculator extends StandardCalculator{
     public void cbrt(double a){
         result=Math.cbrt(a);
     }
-    @override
+    @Override
     public void printResult(){
         System.out.println("Scientific Calculator Result:"+ result );
     }
