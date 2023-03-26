@@ -13,6 +13,9 @@ public class ScientificCalculator extends StandardCalculator{
         result = Math.cos(a);
     }
     public void square(double a){
+        if(a==Double.MAX_VALUE){
+          throw new ArithmeticException("Double is Max");
+        }
         multiply(a,a);
     }
     public void tan(double a){

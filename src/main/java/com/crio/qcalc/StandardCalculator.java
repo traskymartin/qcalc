@@ -52,12 +52,14 @@ public class StandardCalculator {
         this.result = result;
     }    
     public final void multiply(int num1, int num2){
-
         multiply((double)num1, (double)num2);
     
     }
     
     public void multiply(double num1,double num2){
+        if(num1==Double.MAX_VALUE || num2==Double.MAX_VALUE){
+            throw  new ArithmeticException(" Double value overflow");
+        }
         result= num1*num2;
     }
     public final void divide(int num1, int num2){
