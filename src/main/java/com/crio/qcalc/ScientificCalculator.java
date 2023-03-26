@@ -1,8 +1,5 @@
 package com.crio.qcalc;
 
-import javax.xml.transform.Result;
-import java.util.*;
-
 public class ScientificCalculator extends StandardCalculator{
 
     public static void getVersion(){
