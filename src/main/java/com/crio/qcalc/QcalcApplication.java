@@ -8,9 +8,13 @@ public class QcalcApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(QcalcApplication.class, args);
-		StandardCalculator cal=new StandardCalculator();
-		cal.add(Double.MAX_VALUE,Double.MAX_VALUE);
-		System.out.println(cal.getResult());
+		//StandardCalculator cal=new StandardCalculator();
+		//cal.add(1,1.1);
+		//System.out.println(cal.getResult());
+		LogicCalculator calc = new LogicCalculator();
+		calc.OR(8, 6);
+		calc.printResult();
+
 	}
 
 }
